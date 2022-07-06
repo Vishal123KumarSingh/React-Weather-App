@@ -29,7 +29,7 @@ function TopButtons({ setQuery }) {
       {cities.map((city) => (
         <button
           key={city.id}
-          className="text-white text-lg font-medium"
+          className="text-white text-sm md:text-lg lg:text-lg font-bold"
           onClick={() => setQuery({ q: city.title })}
         >
           {city.title}
